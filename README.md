@@ -9,7 +9,7 @@
 6. Criar uma aplicação exemplo com os conceitos aprendidos;
 
 ## Docker 
-Durante a monitoria foi realizado um treinamento prático de docker no qual foi mostrados os principais comandos executados no docker para execução e monitoramento de containers. Através da mentoria hoje sou capaz de entender e criar as imagens próprias para cada aplicação através de um Dockerfile e entender como o mesmo é aplicado em um ambiente de produção.
+Durante a mentoria foi realizado um treinamento prático de docker no qual foi mostrados os principais comandos executados no docker para execução e monitoramento de containers. Através da mentoria hoje sou capaz de entender e criar as imagens próprias para cada aplicação através de um Dockerfile e entender como o mesmo é aplicado em um ambiente de produção.
 Comandos
 
 ### Containers
@@ -160,7 +160,7 @@ A aplicação pode ser encontrada no github:
 	- [ ] Agendado
 	- [ ] Sobe Demanda;
 - [ ] Aplicar uma solução de mensageiria para eventos;
-- [ ] Serparar o cesso a dados em um docker próprio;
+- [ ] Separar o acesso a dados em um docker próprio;
 
 ## Próximas etapas definidas pelo Mentorado:
 
