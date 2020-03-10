@@ -1,0 +1,21 @@
+version: '3.4' 
+
+services:
+   restauranteapi:
+     image: image_restaurante:latest
+     container_name: estudos_mentoria_compose
+     depends_on:
+       - sqlserver
+     ports:
+       - "5000:5000"
+
+   sqlserver:
+     image: microsoft/mssql-server-linux:latest
+     container_name: sqlserver
+     ports:
+       - "1433"
+     volumes:
+       - 'C:\DockerData\mssql:/var/opt/mssql/data'
+     environment:
+       - ACCEPT_EULA=Y
+       - SA_PASSWORD=docker123!
