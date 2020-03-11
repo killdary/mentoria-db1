@@ -73,9 +73,9 @@ namespace Restaurante.Api.IntegrationTest
         public static void SeedSampleData(WritingContext context)
         {
             context.IngredienteCategorias.AddRange(
-                new Domain.Entities.IngredienteCategoria { Descricao = "Carne" },
-                new Domain.Entities.IngredienteCategoria { Descricao = "Peixe" },
-                new Domain.Entities.IngredienteCategoria { Descricao = "Tempero" }
+                new Domain.Entities.IngredienteCategoria { Id = Guid.Parse("d66fd56b-265c-4091-8c04-6c1f24a3411a"), Descricao = "Carne" },
+                new Domain.Entities.IngredienteCategoria { Id = Guid.Parse("c70317c7-17a8-4335-8f43-57c0d67dd76e"), Descricao = "Peixe" },
+                new Domain.Entities.IngredienteCategoria { Id = Guid.Parse("2f77d45f-31b7-4297-8fbc-75c4843e8bdb"), Descricao = "Tempero" }
             );
 
             context.SaveChanges();

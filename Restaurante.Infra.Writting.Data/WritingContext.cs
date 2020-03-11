@@ -27,6 +27,8 @@ namespace Restaurante.Infra.Writting.Data
 
         public DbSet<IngredienteCategoria> IngredienteCategorias { get; set; }
 
+        public DbSet<Domain.Entities.Ingrediente> Ingredientes { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
@@ -60,11 +62,7 @@ namespace Restaurante.Infra.Writting.Data
             modelBuilder.Entity<Receita>()
                 .HasMany(c => c.Passos)
                 .WithOne(e => e.Receita);
-
-            modelBuilder.Entity<Ingrediente>()
-                .HasMany(c => c.Porcoes)
-                .WithOne(e => e.Ingrediente);
-
+            
             modelBuilder.Entity<IngredienteCategoria>()
                 .HasMany(c => c.Ingredientes)
                 .WithOne(e => e.IngredienteCategoria);

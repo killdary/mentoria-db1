@@ -10,7 +10,7 @@ namespace Restaurante.Domain.Common
 {
     public abstract class Entity
     {
-        public Guid Id { get; protected set; }
+        public Guid Id { get; set; }
         public DateTime DateCreate { get; protected set; }
         public DateTime DateUpdate { get; protected set; }
 

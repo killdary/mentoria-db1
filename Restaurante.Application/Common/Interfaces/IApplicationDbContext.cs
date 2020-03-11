@@ -12,6 +12,7 @@ namespace Restaurante.Application.Common.Interfaces
     {
 
         DbSet<Domain.Entities.IngredienteCategoria> IngredienteCategorias { get; set; }
+        DbSet<Domain.Entities.Ingrediente> Ingredientes { get; set; }
         Task<int> SaveChangesAsync(CancellationToken cancellationToken);
     }
 }

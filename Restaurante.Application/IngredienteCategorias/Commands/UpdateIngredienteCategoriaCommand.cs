@@ -21,11 +21,11 @@ namespace Restaurante.Application.IngredienteCategorias.Commands
             return ValidationResult.IsValid;
         }
 
-        public class UpdateTodoItemCommandHandler : IRequestHandler<UpdateIngredienteCategoriaCommand, IngredienteCategoriaCommandResult>
+        public class UpdateIngredienteCategoriaCommandHandler : IRequestHandler<UpdateIngredienteCategoriaCommand, IngredienteCategoriaCommandResult>
         {
             private readonly IApplicationDbContext _context;
 
-            public UpdateTodoItemCommandHandler(IApplicationDbContext context)
+            public UpdateIngredienteCategoriaCommandHandler(IApplicationDbContext context)
             {
                 _context = context;
             }

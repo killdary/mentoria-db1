@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Ingredientes\" />
+    <Folder Include="Ingredientes\Queries\" />
     <Folder Include="Porcoes\" />
     <Folder Include="Receitas\" />
   </ItemGroup>

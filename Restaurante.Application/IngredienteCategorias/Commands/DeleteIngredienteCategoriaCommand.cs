@@ -20,11 +20,11 @@ namespace Restaurante.Application.IngredienteCategorias.Commands
             return ValidationResult.IsValid;
         }
 
-        public class DeleteTodoItemCommandHandler : IRequestHandler<DeleteIngredienteCategoriaCommand, IngredienteCategoriaCommandResult>
+        public class DeleteIngredienteCategoriaCommandHandler : IRequestHandler<DeleteIngredienteCategoriaCommand, IngredienteCategoriaCommandResult>
         {
             private readonly IApplicationDbContext _context;
 
-            public DeleteTodoItemCommandHandler(IApplicationDbContext context)
+            public DeleteIngredienteCategoriaCommandHandler(IApplicationDbContext context)
             {
                 _context = context;
             }

@@ -19,6 +19,7 @@ namespace Restaurante.Api.IntegrationTest.IngredienteCategoria
             _factory = factory;
         }
 
+        #region GET
         [Fact]
         public async Task GetTodosIngredienteCategorias_Returns200Code()
         {
@@ -29,9 +30,9 @@ namespace Restaurante.Api.IntegrationTest.IngredienteCategoria
             var data = JsonConvert.DeserializeObject<QueryResult>( await response.Content.ReadAsStringAsync());
 
             response.EnsureSuccessStatusCode();
+            Assert.Equal(3, data.RowCount);
         }
 
-        #region GET
 
         #endregion
 

@@ -9,9 +9,7 @@ namespace Restaurante.Domain.Entities
     {
         public string Descricao { get; set; }
         public IngredienteCategoria IngredienteCategoria { get; set; }
-
-        public ICollection<Porcao> Porcoes { get; set; }
-
+        
         public void AlterarDados(string descricao)
         {
             Descricao = descricao;

@@ -19,11 +19,11 @@ namespace Restaurante.Application.IngredienteCategorias.Commands
             return ValidationResult.IsValid;
         }
 
-        public class CreateTodoItemCommandHandler : IRequestHandler<CreateIngredienteCategoriaCommand, IngredienteCategoriaCommandResult>
+        public class CreatengredienteCategoriaCommandHandler : IRequestHandler<CreateIngredienteCategoriaCommand, IngredienteCategoriaCommandResult>
         {
             private readonly IApplicationDbContext _context;
 
-            public CreateTodoItemCommandHandler(IApplicationDbContext context)
+            public CreatengredienteCategoriaCommandHandler(IApplicationDbContext context)
             {
                 _context = context;
             }
